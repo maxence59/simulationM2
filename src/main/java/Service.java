@@ -2,6 +2,7 @@ import java.util.List;
 import java.util.Map;
 
 public class Service {
+    private int ID;
     private String nom;
     private Terminal origine;
     private Terminal destination;
