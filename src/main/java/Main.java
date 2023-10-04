@@ -75,4 +75,9 @@ public class Main {
             }
         }
     }
+    public static void main(String[] args) {
+        ListeDemande listeTest=new ListeDemande();
+        listeTest.gen_liste();
+    }
+
 }

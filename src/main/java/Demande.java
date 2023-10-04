@@ -1,10 +1,25 @@
-public class Demande {//a finir
+public class Demande {
 
+    private int id_res;
+
+    private int nb;
+
+    //private String type;
+
+    private int dateArrivéMax;
+
+    private int dateDepart;
+
+    //private int prix;
     private Terminal origine;
     private Terminal destination;
     private int volume;
 
-    public Demande(Terminal origine, Terminal destination, int volume) {
+    public Demande(int id_res, int nb, int dateArrivéMax, int dateDepart, Terminal origine, Terminal destination, int volume) {
+        this.id_res = id_res;
+        this.nb = nb;
+        this.dateArrivéMax = dateArrivéMax;
+        this.dateDepart = dateDepart;
         this.origine = origine;
         this.destination = destination;
         this.volume = volume;
