@@ -36,7 +36,7 @@ public class Main {
         lDemandes.add(uneDemande);
         */
 
-        System.out.println("t\t\tdépart\tarrivée\tdurée\ttype");
+        System.out.println("t\t\t\tdépart\tarrivée\tdurée\ttype");
 
         float t = 0;
         float tmax = 50;
@@ -52,7 +52,7 @@ public class Main {
             while(!finDuree.isEmpty() && (t > finDuree.get(0) || t > tmax)){
                 //événement de fin de service
 
-                System.out.println(finDuree.get(0) + " fin de durée");
+                System.out.println(finDuree.get(0)+"\t"+"\t"+"\t"+"\t"+"Arrivée");
                 finDuree.remove(0);
             }
 
@@ -71,7 +71,7 @@ public class Main {
 
                 finDuree.add(t + i.sommeDuree());
 
-                System.out.println(t);
+                System.out.println(t+"\t"+d.getOrigine().getNom()+"\t\t"+d.getDestination().getNom()+"\t\t"+i.sommeDuree()+"\t"+"Départ");
             }
         }
     }
