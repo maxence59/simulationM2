@@ -1,3 +1,6 @@
+//Roussel maxence
+// Serrano florian
+
 public class Terminal {
     String nom;
 
@@ -11,5 +14,12 @@ public class Terminal {
 
     public void setNom(String nom) {
         this.nom = nom;
+    }
+
+    @Override
+    public String toString() {
+        return "Terminal{" +
+                "nom='" + nom + '\'' +
+                '}';
     }
 }
