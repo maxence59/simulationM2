@@ -5,6 +5,7 @@ import java.io.*;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 public class Main {
@@ -40,7 +41,7 @@ public class Main {
         ArrayList<Demande> lDemandes = new ArrayList<>();
         lDemandes.add(uneDemande);
         */
-
+        /*
         System.out.println("t\t\t\tdépart\tarrivée\tdurée\ttype");
 
         float t = 0;
@@ -135,7 +136,7 @@ public class Main {
         LService.add(s1);
 
         //creation fichier resultat
-        FileWriter fw = new FileWriter("src/main/resources/resultat");
+        FileWriter fw = new FileWriter("src/main/resources/resultat.txt");
         BufferedWriter bw = new BufferedWriter(fw);
 
         //variable informative
@@ -162,7 +163,7 @@ public class Main {
                             for (Service s:LService) {//on parcourt la liste des service
                                 if (s.getID()==sTrouve.getID()){//si c notre service avec les condition rempli
                                     s.setNbContainers(sTrouve.getNbContainers()+listeTest.getListe().get(n).getVolume());//on ajoute la demande au service
-                                    System.out.println("Demande : "+listeTest.getListe().get(n).getId_res()+" accepté dans le service" +
+                                    System.out.println("Demande : "+listeTest.getListe().get(n).getId_res()+" acceptée dans le service" +
                                             s.getID());
                                     s.setNb_d(s.getNb_d()+1);
                                     if (listeTest.getListe().get(n).getPrio()==1){//si la demande est prioritaire

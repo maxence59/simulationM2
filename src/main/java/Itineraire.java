@@ -11,13 +11,13 @@ public class Itineraire {
         this.services = services;
     }
 
-    public float sommeDuree() {
+    /*public float sommeDuree() {
         float sommeD = 0;
         for (Service s : services) {
             sommeD += (float)s.getDuree();
         }
         return sommeD;
-    }
+    }*/
 
     public Terminal getOrigine() {
         return origine;
